@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".DetailActivity">
+
+   <ImageView
+       android:id="@+id/ivDetailPic"
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:backgroundTint="#FFFFFF"
+       android:backgroundTintMode="src_over"
+       tools:srcCompat="@tools:sample/avatars" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/ivDetailPic"
+       android:layout_marginTop="10dp"
+       android:background="@drawable/detail_background"
+       android:backgroundTint="#D9070707"
+       android:backgroundTintMode="src_over"
+       android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/tvDetailTitle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/ivDetailPic"
+           android:layout_marginTop="10dp"
+           android:textAlignment="center"
+           android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+           android:textColor="#FFFFFF"
+           android:textSize="25sp"
+           tools:text='"Roast Beef - Chopped Salad"' />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/tvDetailCalories"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="10dp"
+               android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+               android:textColor="#FFFFFF"
+               android:textSize="20sp"
+               tools:text="@string/calories" />
+
+           <TextView
+               android:id="@+id/tvDetailCarbs"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="10dp"
+               android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+               android:textColor="#FFFFFF"
+               android:textSize="20sp"
+               tools:text="Carbs" />
+
+           <TextView
+               android:id="@+id/tvDetailFat"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="10dp"
+               android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+               android:textColor="#FFFFFF"
+               android:textSize="20sp"
+               tools:text="Fat" />
+
+           <TextView
+               android:id="@+id/tvDetailProtein"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="10dp"
+               android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+               android:textColor="#FFFFFF"
+               android:textSize="20sp"
+               tools:text="Protein" />
+       </LinearLayout>
+   </LinearLayout>
+
+   <Button
+       android:id="@+id/button_add_item"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:layout_alignParentBottom="true"
+       android:background="#04ea00"
+       android:text="Add to menu"
+       android:textColor="#ffffff" />
+
+
+</RelativeLayout>
